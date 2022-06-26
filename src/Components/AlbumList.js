@@ -7,9 +7,11 @@ const AlbumList = ({ albums }) => {
             {albums.map((album, index) => (
                 <li className="album-item" key={index}>
                     <Link to={`/artists/${album.url.replace('https://www.last.fm/music/', '')}`}>
-                        <img src={album.image[3]['#text'] ? album.image[3]['#text'] : '/placeholder-album.jpeg'} alt={`${album.name} Album cover`} />
+                        <div className="artwork" >
+                            <img className="artwork-shadow" src={album.image[3]['#text'] ? album.image[3]['#text'] : '/placeholder-album.jpeg'} alt='' />
+                            <img className="artwork-image" src={album.image[3]['#text'] ? album.image[3]['#text'] : '/placeholder-album.jpeg'} alt={`${album.name} Album cover`} />
+                        </div>
                         <h2>{album.name}</h2>
-                        <p>Aantal keren {album.playcount}</p>
                     </Link>
                 </li>
             ))}

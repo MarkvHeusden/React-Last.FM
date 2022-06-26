@@ -16,9 +16,9 @@ const Album = () => {
                 { error && <p>{ error }</p>}
                 { isFetching && <p>Laden...</p>}
                 { album && <h1>{ album.album.name }</h1> }
-                { album && <h2>{ album.album.artist }</h2> }
+                { album && <span className="heading-caption">{ album.album.artist }</span> }
             </header>
-             { album && <SongList songs={album.album.tracks.track}/> }
+             { album && <SongList artwork={album.album.image[1]['#text']} songs={album.album.tracks.track}/> }
          </div>
       )
 }

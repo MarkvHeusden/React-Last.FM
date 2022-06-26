@@ -33,8 +33,8 @@ const Search = () => {
     return (
         <div className="search">
             <header>
-                <h1>Zoek artiesten</h1>
-                <input placeholder='Bijv. Drake, Prunk, etc.' onInput={e => setInput(e.target.value)} value={input} type="search" />
+                <h1>Zoeken</h1>
+                <input placeholder='Zoek naar artiesten' onInput={e => setInput(e.target.value)} value={input} type="search" />
             </header>
             {/* { input && <p>resultaat voor {input}</p> } */}
             {/* { isFetching && <p>Laden...</p>}  */}
