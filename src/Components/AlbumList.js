@@ -8,8 +8,8 @@ const AlbumList = ({ albums }) => {
                 <li className="album-item" key={index}>
                     <Link to={`/artists/${album.url.replace('https://www.last.fm/music/', '')}`}>
                         <div className="artwork" >
-                            <img className="artwork-shadow" src={album.image[3]['#text'] ? album.image[3]['#text'] : '/placeholder-album.jpeg'} alt='' />
-                            <img className="artwork-image" src={album.image[3]['#text'] ? album.image[3]['#text'] : '/placeholder-album.jpeg'} alt={`${album.name} Album cover`} />
+                            <img className="artwork-shadow" src={album.image[3]['#text'] ? album.image[1]['#text'] : '/placeholder-album.jpeg'} alt='' />
+                            <img className="artwork-image" src={album.image[3]['#text'] ? album.image[2]['#text'] : '/placeholder-album.jpeg'} alt={`${album.name} Album cover`} />
                         </div>
                         <h2>{album.name}</h2>
                     </Link>

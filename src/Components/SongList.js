@@ -1,6 +1,7 @@
 const SongList = ({ songs, artwork }) => {
 
-    return ( 
+    if (songs.length) {
+        return ( 
         <ul className="song-list">
             {songs.map((song, index) => (
                 <li className="song-item" key={index}>
@@ -15,6 +16,21 @@ const SongList = ({ songs, artwork }) => {
             ))}
         </ul>
      );
+    } else {
+        return (
+        <ul className="song-list">
+            <li className="song-item">
+                <span className="song-index">1</span>
+                <img src={artwork ? artwork : '/placeholder-album.jpeg'} alt="Album cover" />
+                <h2>{songs.name}</h2>
+                { songs.duration && <div className="song-duration">
+                    <span className="material-symbols-outlined">schedule</span>
+                    <span>{secondsToMinutes(songs.duration)}</span> 
+                </div> }
+            </li>
+        </ul>
+        )
+    }
 }
 
 const secondsToMinutes = (duration) => {

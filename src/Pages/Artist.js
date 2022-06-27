@@ -15,7 +15,7 @@ const Artist = () => {
                 { error && <p>{ error }</p>}
                 { isFetching && <p>Laden...</p>}
                 { artist && <h1>{ artist.topalbums['@attr'].artist }</h1> }
-                <span className="heading-caption">Top albums</span>
+                { artist && <span className="heading-caption">Top albums</span> }
             </header>
             { artist && <AlbumList albums={artist.topalbums.album}/> }
         </div>
