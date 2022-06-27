@@ -18,7 +18,8 @@ const Album = () => {
                 { album && <h1>{ album.album.name }</h1> }
                 { album && <span className="heading-caption">{ album.album.artist }</span> }
             </header>
-             { album && <SongList artwork={album.album.image[1]['#text']} songs={album.album.tracks.track}/> }
+             { album && 'tracks' in album.album && <SongList artwork={album.album.image[1]['#text']} songs={album.album.tracks.track}/> }
+             { album && !('tracks' in album.album) && <p>Geen nummers gevonden</p> }
          </div>
       )
 }
