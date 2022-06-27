@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react"
 
-
 // Custom fetch hook
 const useFetch = (url) => {
     // States
