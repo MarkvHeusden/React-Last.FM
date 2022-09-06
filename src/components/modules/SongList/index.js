@@ -1,10 +1,12 @@
+import { SongItem } from "./styled";
+
 const SongList = ({ songs, artwork }) => {
 
     if (songs.length) {
         return ( 
         <ul className="song-list">
             {songs.map((song, index) => (
-                <li className="song-item" key={index}>
+                <SongItem key={index}>
                     <span className="song-index">{index + 1}</span>
                     <img src={artwork ? artwork : '/placeholder-album.jpeg'} alt="Album cover" />
                     <h2>{song.name}</h2>
@@ -12,14 +14,14 @@ const SongList = ({ songs, artwork }) => {
                         <span className="material-symbols-outlined">schedule</span>
                         <span>{secondsToMinutes(song.duration)}</span> 
                     </div> }
-                </li>
+                </SongItem>
             ))}
         </ul>
      );
     } else {
         return (
         <ul className="song-list">
-            <li className="song-item">
+            <SongItem>
                 <span className="song-index">1</span>
                 <img src={artwork ? artwork : '/placeholder-album.jpeg'} alt="Album cover" />
                 <h2>{songs.name}</h2>
@@ -27,7 +29,7 @@ const SongList = ({ songs, artwork }) => {
                     <span className="material-symbols-outlined">schedule</span>
                     <span>{secondsToMinutes(songs.duration)}</span> 
                 </div> }
-            </li>
+            </SongItem>
         </ul>
         )
     }

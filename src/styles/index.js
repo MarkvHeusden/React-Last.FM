@@ -26,17 +26,17 @@ const GlobalStyle = createGlobalStyle`
     }
 
     :root {
-    font-size: 16px;
-    font-family: 'Poppins', sans-serif;
+        font-size: 16px;
+        font-family: 'Poppins', sans-serif;
 
-    --black: #050807;
-    --dark-gray: #181818;
-    --dark-gray2: #212121;
-    --gray: #9f9e9e;
-    --white: #fff;
-    --green: #37df11;
+        --black: #050807;
+        --dark-gray: #181818;
+        --dark-gray2: #212121;
+        --gray: #9f9e9e;
+        --white: #fff;
+        --green: #37df11;
 
-    --border: 2px solid var(--dark-gray2);
+        --border: 2px solid var(--dark-gray2);
     }
 
     body {
