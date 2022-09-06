@@ -59,8 +59,32 @@ const GlobalStyle = createGlobalStyle`
         padding-bottom: 3rem;
     }
 
+
     header {
         margin-bottom: 2rem;
+    }
+
+    .content {
+        padding: 1.5rem;
+    }
+
+    .heading-caption {
+        display: block;
+        margin-top: -1rem;
+        font-size: 1rem;
+        font-weight: 500;
+        color: var(--gray);
+    }
+
+    @media screen and (min-width: 40rem) {
+        ul {
+            padding-bottom: 0;
+        }
+
+        .content {
+            margin-left: 18rem;
+            padding: 3.5rem 1.5rem;
+        }
     }
 `
 
