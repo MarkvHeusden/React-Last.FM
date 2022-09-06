@@ -6,7 +6,7 @@ const Nav = () => {
             <ul>
                 <li className="nav-logo">
                     <Link to="/">
-                        <img src="/logo.svg" alt="Label A Logo" />
+                        <img src="/vectors/logo.svg" alt="Label A Logo" />
                     </Link>
                 </li>
                 <NavLink to="/">

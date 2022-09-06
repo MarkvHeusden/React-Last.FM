@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import ArtistList from '../Components/ArtistList'
+import ArtistList from '../components/modules/ArtistList'
 
 const Search = () => {
     // States

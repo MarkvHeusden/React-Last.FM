@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
-import SongList from "../Components/SongList";
-import useFetch from "../Hooks/useFetch";
+import SongList from "../components/modules/SongList";
+import useFetch from "../services/useFetch";
 
 
 const Album = () => {

@@ -1,10 +1,10 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Nav from './Nav'
-import Search from '../Pages/Search'
-import Artist from '../Pages/Artist'
-import Album from '../Pages/Album'
-import Trending from '../Pages/Trending'
-import Profile from '../Pages/Profile'
+import Search from '../../pages/Search'
+import Artist from '../../pages/Artist'
+import Album from '../../pages/Album'
+import Trending from '../../pages/Trending'
+import Profile from '../../pages/Profile'
 
 const App = () => {
     return (
