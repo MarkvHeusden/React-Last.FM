@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom"
-import AlbumList from "../components/modules/AlbumList"
-import useFetch from "../services/useFetch"
+import AlbumList from "../../components/modules/AlbumList"
+import useFetch from "../../services/useFetch"
 
 const Artist = () => {
     // Get artist name from url params
