@@ -1,5 +1,5 @@
 /* Reset */
-*,
+/* *,
 *::before,
 *::after {
     box-sizing: border-box;
@@ -21,10 +21,10 @@ button,
 textarea,
 select {
     font: inherit;
-}
+} */
 
 /* Generic styles */
-:root {
+/* :root {
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
 
@@ -60,7 +60,7 @@ ul {
 
 header {
     margin-bottom: 2rem;
-}
+} */
 
 /* Nav bar */
 .nav-bar {
@@ -183,31 +183,31 @@ input[type='search']:focus {
 }
 
 /* Album List */
-.album-list {
+/* .album-list {
     width: calc(100% + 3rem);
     margin-left: -1.55rem;
     display: flex;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
-}
+} */
 
-.album-list::-webkit-scrollbar {
+/* .album-list::-webkit-scrollbar {
     display: none;
-}
+} */
 
-.album-item {
+/* .album-item {
     scroll-snap-align: start;
     flex: 0 0 45%;
     padding-left: 1.5rem;
-}
+} */
 
-.album-item a {
+/* .album-item a {
     transition: opacity 0.3s;
 }
 
 .album-item a:hover {
     opacity: 0.85;
-}
+} */
 
 .artwork {
     position: relative;
@@ -329,7 +329,7 @@ input[type='search']:focus {
     }
 }
 
-@media screen and (min-width: 60rem) {
+/* @media screen and (min-width: 60rem) {
     .album-item {
         flex: 0 0 30%;
         padding-right: 1rem;
@@ -346,4 +346,4 @@ input[type='search']:focus {
     .album-item {
         flex: 0 0 15vw;
     }
-}
+} */
