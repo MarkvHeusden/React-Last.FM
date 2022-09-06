@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom";
+import { StyledAlbumList, StyledAlbumItem } from "./styled";
 
 const AlbumList = ({ albums }) => {
 
     return ( 
-        <ul className="album-list">
+        <StyledAlbumList>
             {albums.map((album, index) => (
-                <li className="album-item" key={index}>
+                <StyledAlbumItem key={index}>
                     <Link to={`/artists/${album.url.replace('https://www.last.fm/music/', '')}`}>
                         <div className="artwork" >
                             <img className="artwork-shadow" src={album.image[3]['#text'] ? album.image[1]['#text'] : '/images/placeholder-album.jpeg'} alt='' />
@@ -13,9 +14,9 @@ const AlbumList = ({ albums }) => {
                         </div>
                         <h2>{album.name}</h2>
                     </Link>
-                </li>
+                </StyledAlbumItem>
             ))}
-        </ul>
+        </StyledAlbumList>
      );
 }
  
