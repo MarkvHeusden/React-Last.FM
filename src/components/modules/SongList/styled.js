@@ -32,4 +32,20 @@ export const SongItem = styled.li`
         justify-content: flex-start;
         display: none;
     }
+
+    @media screen and (min-width: 40rem) {
+        img {
+            width: 3.5rem;
+            height: 3.5rem;
+            border-radius: 0.6rem;
+        }
+
+        h2 {
+            flex: 0 0 60%;
+        }
+
+        .song-duration {
+            display: flex;
+        }
+    }
 `
