@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import ArtistList from '../../components/modules/ArtistList'
+import { SearchInput } from './styled'
 
 const Search = () => {
     // States
@@ -20,7 +21,7 @@ const Search = () => {
         <div className="search">
             <header>
                 <h1>Zoeken</h1>
-                <input placeholder='Zoek naar artiesten' onInput={e => setInput(e.target.value)} value={input} type="search" />
+                <SearchInput placeholder='Zoek naar artiesten' onInput={e => setInput(e.target.value)} value={input} type="search" />
             </header>
             { artistResults && <ArtistList artists={artistResults}/> }
         </div>
