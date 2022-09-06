@@ -3,6 +3,8 @@ import styled from "styled-components"
 export const StyledAlbumList = styled.ul`
     width: calc(100% + 3rem);
     margin-left: -1.55rem;
+    padding-top: .5rem;
+    margin-top: -.5rem;
     display: flex;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
@@ -31,11 +33,16 @@ export const StyledAlbumItem = styled.li`
     }
 
     a {
-        transition: opacity 0.3s;
+        transition: transform 0.3s;
+        display: inline-block;
     }
 
-    a:hover {
-        opacity: 0.85;
+    &:nth-child(odd) a:hover {
+        transform: rotate(2deg) scale(1.01);
+    }
+
+    &:nth-child(even) a:hover {
+        transform: rotate(-2deg) scale(1.01);
     }
 
     h2 {
